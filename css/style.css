@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#clock {
+    position: relative;
+    height: 80vh;
+    width: 80vh;
+    background-image: url(../img/clock.png);
+    background-size: cover;
+}
+
+#arrow_hour {
+    background-image: url(../img/arrow_hour.png);
+    position: absolute;
+    left: calc(50% - 179px);
+    top: calc(50% - 179px);
+    background-size: cover;
+    height: 350px;
+    width: 359px;
+    transform-origin: 50% 51%;
+    transform: rotate(45deg);
+}
+
+#arrow_minut {
+    background-image: url(../img/arrow_minut.png);
+    position: absolute;
+    left: calc(50% - 179px);
+    top: calc(50% - 179px);
+    background-size: cover;
+    height: 350px;
+    width: 359px;
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+    z-index: 10;
+}
+
+#arrow_sec {
+    background-image: url(../img/arrow_sec.png);
+    position: absolute;
+    left: calc(50% - 179px);
+    top: calc(50% - 179px);
+    background-size: cover;
+    height: 350px;
+    width: 359px;
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+    z-index: 20;
+}
+
+.box {
+    display: none;
+    background: #000;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: calc(50% - 21px);
+    top: calc(50% - 14px);
